@@ -602,7 +602,6 @@
         margin: auto;
         display: grid;
         grid-template-rows: 1fr 2fr 1fr;
-        background: salmon;
         height: 95vh;
         width: 95vw;
         background-image: url(https://previews.123rf.com/images/flas100/flas1001710/flas100171000142/88488655-brown-wooden-table-top-near-scratched-grunge-wallpaper-.jpg);
