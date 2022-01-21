@@ -23,7 +23,10 @@
     import restImg from "$lib/assets/rest.png";
     import vaccineImg from "$lib/assets/vaccine.png";
     import vitaminImg from "$lib/assets/vitamin.png";
-    import music from "$lib/assets/Heart Barracuda.mp3";
+    import backgroundgamesong from "$lib/assets/backgroundgamesong.mp3";
+
+    var audio = new Audio(backgroundgamesong);
+        audio.play();
 
     let playerDeck = defensorDeck.sort(() => Math.random() - 0.5);
     const botDeck = invasorDeck.sort(() => Math.random() - 0.5);
@@ -33,9 +36,9 @@
     let playerTurn = false;
     let enemyTurn = true;
 
-    let victoryCondition = 20;
-
+    let victoryCondition = 1;
     let life = 100;
+
     let damage = 0;
     let damageCount = 0;
     let removeVaccine = false;
@@ -123,8 +126,7 @@
         enemyField = enemyField.filter((c) => c !== card);
         enemyGraveyard.push(card);
         enemyGraveyard = enemyGraveyard;
-        var audio = new Audio(music);
-        audio.play();
+        
     };
 
     const returnPlayerCard = (cardName) => {
@@ -598,7 +600,6 @@
         margin: auto;
         display: grid;
         grid-template-rows: 1fr 2fr 1fr;
-        background: salmon;
         height: 95vh;
         width: 95vw;
         background-image: url(https://previews.123rf.com/images/flas100/flas1001710/flas100171000142/88488655-brown-wooden-table-top-near-scratched-grunge-wallpaper-.jpg);
