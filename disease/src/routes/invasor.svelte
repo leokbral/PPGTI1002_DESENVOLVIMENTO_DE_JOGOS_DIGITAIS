@@ -24,6 +24,8 @@
     import vaccineImg from "$lib/assets/vaccine.png";
     import vitaminImg from "$lib/assets/vitamin.png";
     import backgroundgamesong from "$lib/assets/backgroundgamesong.mp3";
+    import graveyardsong from "$lib/assets/graveyardsong.mp3";
+    /*import dbclickcardsong from "$lib/assets/dbclickcardsong.mp3";*/
 
     var audio = new Audio(backgroundgamesong);
         audio.play();
@@ -119,6 +121,8 @@
         playerField = playerField.filter((c) => c !== card);
         playerGraveyard.push(card);
         playerGraveyard = playerGraveyard;
+        var audio = new Audio(graveyardsong);
+        audio.play();
     };
 
     
@@ -126,7 +130,8 @@
         enemyField = enemyField.filter((c) => c !== card);
         enemyGraveyard.push(card);
         enemyGraveyard = enemyGraveyard;
-        
+        var audio = new Audio(graveyardsong);
+        audio.play();        
     };
 
     const returnPlayerCard = (cardName) => {
