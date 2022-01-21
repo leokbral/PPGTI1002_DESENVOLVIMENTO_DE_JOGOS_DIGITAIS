@@ -120,7 +120,7 @@
         playerField = playerField.filter((c) => c !== card);
         playerGraveyard.push(card);
         playerGraveyard = playerGraveyard;
-        var audio = new Audio(backgroundgamesong);
+        var audio = new Audio(graveyardsong);
         audio.play();
     };
 
@@ -128,7 +128,7 @@
         enemyField = enemyField.filter((c) => c !== card);
         enemyGraveyard.push(card);
         enemyGraveyard = enemyGraveyard;
-        var audio = new Audio(backgroundgamesong);
+        var audio = new Audio(graveyardsong);
         audio.play();
     };
 
