@@ -23,6 +23,10 @@
     import restImg from "$lib/assets/rest.png";
     import vaccineImg from "$lib/assets/vaccine.png";
     import vitaminImg from "$lib/assets/vitamin.png";
+    import backgroundgamesong from "$lib/assets/backgroundgamesong.mp3";
+
+    var audio = new Audio(backgroundgamesong);
+        audio.play();
 
     let playerDeck = defensorDeck.sort(() => Math.random() - 0.5);
     const botDeck = invasorDeck.sort(() => Math.random() - 0.5);
