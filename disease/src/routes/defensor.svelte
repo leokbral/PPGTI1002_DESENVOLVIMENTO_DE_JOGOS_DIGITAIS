@@ -24,7 +24,7 @@
     import vaccineImg from "$lib/assets/vaccine.png";
     import vitaminImg from "$lib/assets/vitamin.png";
 
-    const playerDeck = defensorDeck.sort(() => Math.random() - 0.5);
+    let playerDeck = defensorDeck.sort(() => Math.random() - 0.5);
     const botDeck = invasorDeck.sort(() => Math.random() - 0.5);
 
     let enemyDeck = botDeck;
