@@ -23,6 +23,7 @@
     import restImg from "$lib/assets/rest.png";
     import vaccineImg from "$lib/assets/vaccine.png";
     import vitaminImg from "$lib/assets/vitamin.png";
+    import music from "$lib/assets/Heart Barracuda.mp3";
 
     let playerDeck = defensorDeck.sort(() => Math.random() - 0.5);
     const botDeck = invasorDeck.sort(() => Math.random() - 0.5);
@@ -117,10 +118,13 @@
         playerGraveyard = playerGraveyard;
     };
 
+    
     const removeFromEnemyField = (card) => {
         enemyField = enemyField.filter((c) => c !== card);
         enemyGraveyard.push(card);
         enemyGraveyard = enemyGraveyard;
+        var audio = new Audio(music);
+        audio.play();
     };
 
     const returnPlayerCard = (cardName) => {
@@ -589,6 +593,7 @@
 </div>
 
 <style>
+   
     .arena {
         margin: auto;
         display: grid;
