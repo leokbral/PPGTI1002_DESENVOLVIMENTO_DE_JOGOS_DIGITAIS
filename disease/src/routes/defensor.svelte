@@ -32,9 +32,9 @@
     let playerTurn = false;
     let enemyTurn = true;
 
-    let victoryCondition = 20;
-
+    let victoryCondition = 1;
     let life = 100;
+
     let damage = 0;
     let damageCount = 0;
     let removeVaccine = false;
