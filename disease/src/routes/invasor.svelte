@@ -27,9 +27,9 @@
     import graveyardsong from "$lib/assets/graveyardsong.mp3";
     import dbclickcardsong from "$lib/assets/dbclickcardsong.mp3";
 
-    var audio = new Audio(backgroundgamesong);
+    /* var audio = new Audio(backgroundgamesong);
         audio.play();
-        audio.loop = true;
+        audio.loop = true; */
 
     let playerDeck = defensorDeck.sort(() => Math.random() - 0.5);
     const botDeck = invasorDeck.sort(() => Math.random() - 0.5);
@@ -529,7 +529,10 @@
         }
     };
 </script>
-
+<audio controls loop>
+    <source src={backgroundgamesong}
+    type="audio/mp3">
+</audio>
 <div class="arena">
     <div class="enemy">
         <div class="graveyard">
