@@ -1,3 +1,7 @@
+<script>
+
+import menucoverImg from "$lib/assets/menucover.png";
+</script>
 <div class="main">
     <h1>DISEASE</h1>
     <div class="subtitle">
@@ -15,7 +19,7 @@
         align-items: center;
         justify-content: center;
         height: 97vh;
-        background-image: url("disease\src\lib\assets\menucover.png");
+        background-image: url(menucoverImg);
     }
     .subtitle {
         font-size: 10px;
