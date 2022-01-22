@@ -2,7 +2,7 @@
     import menucoverImg from "$lib/assets/menucover.png";
 </script>
 
-<div class="main">
+<div class="main" style="--bgImg: url({menucoverImg})">>
     <h1>DISEASE</h1>
     <div class="subtitle">
         <h2>WEB GAME</h2>
