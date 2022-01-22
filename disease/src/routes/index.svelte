@@ -1,6 +1,26 @@
 <script>
     import menucoverImg from "$lib/assets/menucover.png";
+    import menusong from "$lib/assets/menusong.mp3";
+
+    const handleonload = ()=> {
+        var context = new Audio(menusong);
+        context.play();
+        var context = new AudioContext();
+
+    }
+    
 </script>
+<svelte:window on:load={handleonload}/>
+<!-- 
+<audio autoplay loop>
+    <source src={menusong} type="audio/mp3" />
+</audio>
+ -->
+<!-- <iframe title="a" src={menusong} allow="autoplay" id="audio" />
+<audio id="player" autoplay controls
+    ><source src={menusong} type="audio/mp3" /></audio
+> -->
+<!-- <iframe title="test" src={menusong} allow="autoplay" id="audio" /> -->
 
 <div class="main" style="--bgImg: url({menucoverImg});">
     <div class="menu">
@@ -46,7 +66,7 @@
 
     .button {
         border: none;
-        color: #ac77ba;
+        color: rgb(252, 250, 253);
         /* padding: 15px 110px; */
         text-align: center;
         text-decoration: none;
