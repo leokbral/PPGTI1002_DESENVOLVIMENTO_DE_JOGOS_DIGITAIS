@@ -203,8 +203,9 @@
         <!-- svelte-ignore a11y-structure -->
         <figcaption>
             8 cartas. <br />
-            Bloqueia os danos de uma doença fungica enquanto estiver na mesa. Elimina
-            uma doença viral ou bacteriana.
+            Bloqueia os danos de uma doença fungica enquanto estiver na mesa.<br
+            />
+            Elimina uma doença viral ou bacteriana.
         </figcaption>
     </p>
     <p>
