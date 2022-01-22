@@ -25,6 +25,7 @@
     import vitaminImg from "$lib/assets/vitamin.png";
     import backgroundgamesong from "$lib/assets/backgroundgamesong.mp3";
     import graveyardsong from "$lib/assets/graveyardsong.mp3";
+    import dbclickcardsong from "$lib/assets/dbclickcardsong.mp3";
 
     var audio = new Audio(backgroundgamesong);
         audio.play();
@@ -84,6 +85,8 @@
                 enemyHand = enemyHand.filter((c) => c !== card);
                 enemyField.push(card);
                 enemyField = enemyField;
+                let audiodblclick = new Audio(dbclickcardsong);
+                audiodblclick.play();
             }
         }
     };
@@ -94,6 +97,8 @@
                 playerHand = playerHand.filter((c) => c !== card);
                 playerField.push(card);
                 playerField = playerField;
+                let audiodblclick = new Audio(dbclickcardsong);
+                audiodblclick.play();
             }
         }
     };
@@ -490,7 +495,7 @@
         checkPlayer(damage);
         if (life < 0) {
             alert("GAME OVER! Desease wins!");
-            window.location.href = "http://localhost:3000/";
+            window.location.href = "./";
         }
 
         if (
@@ -498,7 +503,7 @@
             enemyDeck.length < victoryCondition
         ) {
             alert("GAME OVER! You win!");
-            window.location.href = "http://localhost:3000/";
+            window.location.href = "./";
         }
         enemyPullCard();
         playerPullCard();
