@@ -15,7 +15,7 @@
         align-items: center;
         justify-content: center;
         height: 97vh;
-        background-image: url("lib/assets/cover.jpg");
+        background-image: url("disease\src\lib\assets\menucover.png");
     }
     .subtitle {
         font-size: 10px;
