@@ -15,7 +15,7 @@
         align-items: center;
         justify-content: center;
         height: 97vh;
-        background-color: rgb(116, 114, 117);
+        background-image: url(C:\Users\leokb\Documents\GitHub\PPGTI1002_DESENVOLVIMENTO_DE_JOGOS_DIGITAIS\disease\src\lib\assets\cover.jpg);
     }
     .subtitle {
         font-size: 10px;
