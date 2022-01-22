@@ -48,10 +48,10 @@
     defensor representam os tratamentos e remediações para as situações e doenças
     que aparecem ao longo do jogo.<br />
     Na primeira rodada o jogador saca 5 cartas do deck, a cada rodada 1 carta é puxada
-    do deck automaticamente e pelo menos 1 carta deve ser colocada na mesa.<br
-    />
-    O invasor deve iniciar o primeiro turno escolhendo a carta para ser colcoada
-    na mesa. <br />
+    do deck automaticamente.<br />
+    O invasor deve iniciar o primeiro turno escolhendo a carta para ser colocada
+    na mesa ou finalizando o turno sem a obrigatoriedade de jogar alguma carta.
+    <br />
     Para cada jogador no máximo 5 cartas podem estar na mesa simultaneamente.<br
     />
     Quando uma carta vai para a mesa seu efeito passa a valer.<br />
@@ -203,7 +203,8 @@
         <!-- svelte-ignore a11y-structure -->
         <figcaption>
             8 cartas. <br />
-            Elimina uma doença viral ou bacteriana.
+            Bloqueia os danos de uma doença fungica enquanto estiver na mesa. Elimina
+            uma doença viral ou bacteriana.
         </figcaption>
     </p>
     <p>
