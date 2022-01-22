@@ -29,6 +29,7 @@
 
     var audio = new Audio(backgroundgamesong);
         audio.play();
+        audio.loop = true;
 
     let playerDeck = defensorDeck.sort(() => Math.random() - 0.5);
     const botDeck = invasorDeck.sort(() => Math.random() - 0.5);
