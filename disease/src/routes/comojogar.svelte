@@ -66,6 +66,7 @@
     vence o jogo.<br />
     As cartas do invasor são as pretas.<br />
     As cartas do defensor são as azuis.<br />
+    Todas as ações são realizadas com o mouse, duplo click para movimentar as cartas.<br>
 </p>
 <figure>
     <p>
