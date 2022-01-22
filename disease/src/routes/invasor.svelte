@@ -530,7 +530,7 @@
     };
 </script>
 <audio controls loop>
-    <source src={backgroundgamesong}
+    <source src={backgroundgamesong} loop
     type="audio/mp3">
 </audio>
 <div class="arena">
