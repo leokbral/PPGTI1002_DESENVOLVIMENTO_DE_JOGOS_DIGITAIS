@@ -1,7 +1,7 @@
 <script>
-
-import menucoverImg from "$lib/assets/menucover.png";
+    import menucoverImg from "$lib/assets/menucover.png";
 </script>
+
 <div class="main">
     <h1>DISEASE</h1>
     <div class="subtitle">
